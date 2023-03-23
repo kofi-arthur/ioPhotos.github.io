@@ -510,12 +510,15 @@ section.contact .right-col form button {
   font-size: 14px;
   font-weight: 500;
   background-color: var(--pear);
+  color: var(--reseda-green);
   border: none;
+  transition: .3s;
 }
 
 section.contact .right-col form button:hover {
   cursor: pointer;
-  background-color: #d86a42;
+  background-color: var(--pear-h);
+  color: #fff;
 }
 
 section.contact .right-col form button i {
