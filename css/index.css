@@ -59,7 +59,7 @@ section.intro {
   height: 500px;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: var(--dark-spring);
 }
 
 section.intro header {
@@ -112,7 +112,6 @@ section.intro .main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: var(--dark-spring);
 }
 
 section.intro .main .box-01 {
@@ -211,7 +210,7 @@ section.services .tab-container {
 section.services .tab-container .tab {
   width: 300px;
   height: 230px;
-  border: 1px solid var(--pear);
+  border: 1px solid var(--dark-spring);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -222,7 +221,9 @@ section.services .tab-container .tab {
 
 section.services .tab-container .tab:hover {
   transform: translateY(-10px);
-
+  border: 1px solid var(--pear);
+  background: var(--eerie-black);
+  box-shadow: 0 20px 20px -10px #000;
 }
 
 section.services .tab-container .tab .top {
@@ -237,12 +238,18 @@ section.services .tab-container .tab .top {
 section.services .tab-container .tab .top .number {
   width: 35px;
   height: 35px;
-  background-color: var(--pear);
+  background-color: var(--dark-spring);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   margin-right: 10px;
+  transition: .3s;
+}
+
+section.services .tab-container .tab:hover .top .number {
+  background-color: var(--pear);
+  color: var(--reseda-green);
 }
 
 section.services .tab-container .tab .top h4 {
@@ -258,9 +265,15 @@ section.services .tab-container .tab p.detail {
 
 section.services .tab-container .tab a {
   padding: 8px 20px;
-  background-color: var(--pear);
+  background-color: var(--dark-spring);
   font-size: 14px;
   font-weight: 500;
+  transition: .3s;
+}
+
+section.services .tab-container .tab:hover a {
+  background-color: var(--pear);
+  color: var(--reseda-green);
 }
 
 
