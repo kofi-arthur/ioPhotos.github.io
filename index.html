@@ -139,7 +139,70 @@
 
     <h3 class="title">What People Say</h3>
 
-    <div class="slider"></div>
+    <div class="testimonial-slider">
+      <div class="t-swiper t-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- John Doe</span>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- Samuel Samuels</span>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- Allan Smith</span>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- Allan Smith</span>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- Allan Smith</span>
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eos sequi optio deleniti, quam explicabo.
+              Fugit assumenda earum pariatur laboriosam quasi, harum facilis, nihil aliquam illo hic tenetur
+              reprehenderit
+              illum!
+            </p>
+            <span>- Allan Smith</span>
+          </div>
+        </div>
+        <div class="t-swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
   </section>
 
   <section class="contact" id="contact">
@@ -212,6 +275,22 @@
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
+      },
+    });
+    var tSwiper = new Swiper(".t-Swiper", {
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".t-swiper-pagination",
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
   </script>
