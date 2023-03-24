@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
-    <link rel="stylesheet" href="./css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
 </head>
 
 <body>
@@ -60,19 +60,46 @@
         </div>
     </section>
 
+
     <section class="gallery" id="gallery">
         <h3>Some of my Photographs</h3>
 
-        <div class="gallery-container" id="animated-thumbnails-gallery"">
-            <a href=" ./asset/photos/photo0.png" data-lg-size="1000-1000">
-            <img alt="img1" src="./asset/photos/photo0.png" />
+        <div class="container" id="lightgallery">
+            <a href="../asset/photos/photo0.png" class="square">
+                <img src="./asset/photos/photo0.png" alt="">
             </a>
-            <a href="./asset/photos/photo1.jpg" data-lg-size="640-960">
-                <img alt="img2" src="./asset/photos/photo1.jpg" />
+            <a href="../asset/photos/photo1.png" class="vertical">
+                <img src="./asset/photos/photo1.jpg" alt="">
             </a>
+            <a href="../asset/photos/photo2.jpg" class="horizontal">
+                <img src="./asset/photos/photo2.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo3.jpg" class="square">
+                <img src="./asset/photos/photo3.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo4.jpg" class="horizontal">
+                <img src="./asset/photos/photo4.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo5.jpg" class="square">
+                <img src="./asset/photos/photo5.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo6.jpg" class="horizontal">
+                <img src="./asset/photos/photo6.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo7.jpg" class="square">
+                <img src="./asset/photos/photo7.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo8.jpg" class="horizontal">
+                <img src="./asset/photos/photo8.jpg" alt="">
+            </a>
+            <a href="../asset/photos/photo9.jpg" class="square">
+                <img src="./asset/photos/photo9.jpg" alt="">
+            </a>
+
         </div>
 
     </section>
+
 
     <section class="impressed">
         <h2>Already impressed?</h2>
@@ -293,6 +320,7 @@
 
     <!-- Swiper JS -->
     <script src="./javascript/swiper-bundle.min.js"></script>
+    <script src="./javascript/lightgallery.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -325,19 +353,6 @@
             },
         });
     </script>
-
-    <script src="./javascript/lightgallery.min.js"></script>
-
-    <script type="text/javascript">
-        lightGallery(document.getElementById('animated-thumbnails-gallery'), {
-            animateThumb: true,
-            zoomFromOrigin: true,
-            allowMediaOverlap: false,
-            toggleThumb: true
-        });
-
-    </script>
-
 
 </body>
 
