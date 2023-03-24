@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
-    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/lightgallery-bundle.css">
 </head>
 
 <body>
@@ -64,11 +64,11 @@
     <section class="gallery" id="gallery">
         <h3>Some of my Photographs</h3>
 
-        <div class="container" id="lightgallery">
+        <div class="container" id="animated-thumbnails">
             <a href="../asset/photos/photo0.png">
                 <img src="./asset/photos/photo0.png" alt="">
             </a>
-            <a href="../asset/photos/photo1.png">
+            <a href="../asset/photos/photo1.jpg">
                 <img src="./asset/photos/photo1.jpg" alt="">
             </a>
             <a href="../asset/photos/photo2.jpg">
@@ -319,7 +319,7 @@
 
     <!-- Swiper JS -->
     <script src="./javascript/swiper-bundle.min.js"></script>
-    <script src="./javascript/lightgallery.js"></script>
+    <script src="./javascript/lightgallery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -351,6 +351,13 @@
                 prevEl: ".t-swiper-button-prev",
             },
         });
+    </script>
+
+    <!-- <script src="./javascript/lightgallery.js"></script> -->
+
+    <script>
+        var imagePop = document.getElementById('animated-thumbnails')
+        lightGallery(imagePop);
     </script>
 
 </body>
