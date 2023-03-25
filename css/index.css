@@ -10,6 +10,24 @@
   --yellow-green: #a1d757ff;
 }
 
+/* scrollbar contatiner */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--pear);
+  border-radius: 30px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -145,6 +163,8 @@ section.intro .main .box-01 a:hover {
   color: #fff;
 }
 
+/* GALLERY */
+
 section.gallery {
   width: 100%;
   min-height: 600px;
@@ -199,6 +219,8 @@ section.gallery .container a:hover img {
   scale: 1.15;
 }
 
+/* IMPRESSED BANNER */
+
 section.impressed {
   width: 100%;
   height: 200px;
@@ -227,6 +249,8 @@ section.impressed a:hover {
   background-color: var(--pear-h);
   color: #fff;
 }
+
+/* SERVICES */
 
 section.services {
   width: 100%;
@@ -323,6 +347,8 @@ section.services .tab-container .tab:hover a {
   background-color: var(--pear);
   color: var(--reseda-green);
 }
+
+/* TESTIMONIALS */
 
 section.testimonials {
   width: 100%;
@@ -488,11 +514,14 @@ section.contact .left-col .signature {
   width: 200px;
   height: 100px;
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 section.contact .left-col .signature img {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: contain;
   object-position: center;
@@ -538,17 +567,21 @@ section.contact .right-col form .field input {
 section.contact .right-col form textarea {
   width: 100%;
   background: transparent;
-  border: none;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   resize: none;
   margin-bottom: 30px;
   max-height: 200px;
+  padding: 10px;
   transition: 0.3s;
 }
 
-section.contact .right-col form .field input:focus,
-section.contact .right-col form textarea:focus {
+section.contact .right-col form .field input:focus {
   border-bottom: 1.5px solid var(--pear);
+  outline: none;
+}
+
+section.contact .right-col form textarea:focus {
+  border: 1.5px solid var(--pear);
   outline: none;
 }
 
