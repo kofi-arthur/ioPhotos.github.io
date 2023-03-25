@@ -64,7 +64,7 @@
     <section class="gallery" id="gallery">
         <h3>Some of my Photographs</h3>
 
-        <div class="container" id="animated-thumbnails">
+        <div class="container" id="lightgallery">
             <a href="../asset/photos/photo0.png">
                 <img src="./asset/photos/photo0.png" alt="">
             </a>
@@ -319,7 +319,6 @@
 
     <!-- Swiper JS -->
     <script src="./javascript/swiper-bundle.min.js"></script>
-    <script src="./javascript/lightgallery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -353,11 +352,21 @@
         });
     </script>
 
-    <!-- <script src="./javascript/lightgallery.js"></script> -->
+    <!-- lightgallery scripts -->
+    <script src="./javascript/lightgallery.umd.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="./javascript/lg-fullscreen.umd.js"></script>
+    <script src="./javascript/lg-rotate.umd.js"></script>
+    <script src="./javascript/lg-thumbnail.umd.js"></script>
+    <script src="./javascript/lg-zoom.umd.js"></script>
 
     <script>
-        var imagePop = document.getElementById('animated-thumbnails')
-        lightGallery(imagePop);
+        var gallery = document.getElementById('lightgallery');
+        lightGallery(gallery, {
+            plugins: [lgRotate, lgFullscreen, lgZoom, lgThumbnail],
+            scale: 10,
+        });
     </script>
 
 </body>

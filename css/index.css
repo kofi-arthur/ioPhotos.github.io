@@ -137,7 +137,7 @@ section.intro .main .box-01 a {
   font-weight: 500;
   letter-spacing: 0.5px;
   color: var(--reseda-green);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 section.intro .main .box-01 a:hover {
@@ -188,7 +188,7 @@ section.gallery .container a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 section.gallery .container a:hover {
@@ -196,8 +196,8 @@ section.gallery .container a:hover {
 }
 
 section.gallery .container a:hover img {
-  scale: 1.1;
-} 
+  scale: 1.15;
+}
 
 section.impressed {
   width: 100%;
@@ -220,7 +220,7 @@ section.impressed a {
   font-size: 14px;
   font-weight: 500;
   color: var(--reseda-green);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 section.impressed a:hover {
@@ -263,7 +263,7 @@ section.services .tab-container .tab {
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
-  transition: .3s;
+  transition: 0.3s;
   background: var(--eerie-black);
 }
 
@@ -292,7 +292,7 @@ section.services .tab-container .tab .top .number {
   justify-content: center;
   font-weight: 600;
   margin-right: 10px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 section.services .tab-container .tab:hover .top .number {
@@ -316,14 +316,13 @@ section.services .tab-container .tab a {
   background-color: var(--dark-spring);
   font-size: 14px;
   font-weight: 500;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 section.services .tab-container .tab:hover a {
   background-color: var(--pear);
   color: var(--reseda-green);
 }
-
 
 section.testimonials {
   width: 100%;
@@ -387,7 +386,7 @@ section.testimonials .testimonial-slider .t-swiper .t-swiper-pagination {
   right: 0;
 }
 
-section.testimonials .t-swiper-button-next{
+section.testimonials .t-swiper-button-next {
   width: 30px;
   height: 30px;
   display: flex;
@@ -400,7 +399,7 @@ section.testimonials .t-swiper-button-next{
   cursor: pointer;
   z-index: 2;
 }
-section.testimonials .t-swiper-button-prev{
+section.testimonials .t-swiper-button-prev {
   width: 30px;
   height: 30px;
   display: flex;
@@ -415,7 +414,7 @@ section.testimonials .t-swiper-button-prev{
 }
 
 section.testimonials .t-swiper-button-next i,
-section.testimonials .t-swiper-button-prev i{
+section.testimonials .t-swiper-button-prev i {
   color: var(--pear);
   font-size: 28px;
 }
@@ -560,7 +559,7 @@ section.contact .right-col form button {
   background-color: var(--pear);
   color: var(--reseda-green);
   border: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 section.contact .right-col form button:hover {
